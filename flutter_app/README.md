@@ -1,4 +1,4 @@
-# 📱 Flutter Controller App
+# Flutter Controller App
 
 A custom Android Bluetooth controller app for the Pick & Place robot. Built with Flutter for a clean, responsive UI optimized for landscape use during competition.
 
