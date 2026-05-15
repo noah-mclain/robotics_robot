@@ -1,4 +1,4 @@
-# 🔧 Arduino Firmware — robot_controller.ino
+# Arduino Firmware — robot_controller.ino
 
 ## Overview
 
