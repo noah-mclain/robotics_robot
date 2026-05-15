@@ -1,7 +1,5 @@
-# 🤖 Autonomous Mobile Robot Pick & Place — Controller System
+# Autonomous Mobile Robot Pick & Place — Controller System
 
-**Arab Academy for Science, Technology & Maritime Transport — Smart Village**  
-**Course:** Robotics Applications (CCS4605) | **Instructor:** Dr. Magdy Naeem  
 **Team:** Malak Maher · Nada Ayman · Rola Khaled · Zeina Ahmed
 
 ---
