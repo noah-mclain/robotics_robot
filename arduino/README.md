@@ -3,7 +3,7 @@
 ## Overview
 
 This is the Arduino Uno firmware for the Pick & Place robot. It handles:
-- Bluetooth command parsing (HC-05)
+- Bluetooth command parsing (HC-06)
 - Differential drive motor control
 - 3-DOF robotic arm control via PCA9685
 - Non-blocking ultrasonic obstacle detection
