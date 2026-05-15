@@ -6,7 +6,7 @@ A custom Android Bluetooth controller app for the Pick & Place robot. Built with
 
 ## Features
 
-- **One-tap Bluetooth connection** — scans paired devices, connects to HC-05 in seconds
+- **One-tap Bluetooth connection** — scans paired devices, connects to HC-06 in seconds
 - **Drive controls** — forward, backward, sharp turns, curves while moving
 - **Hold-to-move** — press and hold turns, curves, and arm buttons for continuous movement; release to stop
 - **Speed presets** — START / DRIVE / RACE / MAX (no slider, fast to tap during race)
@@ -45,7 +45,7 @@ A custom Android Bluetooth controller app for the Pick & Place robot. Built with
 - Flutter SDK 3.0+
 - Android 5.0+ (API 21+)
 - Android phone with Bluetooth
-- HC-05 paired in Android Bluetooth settings before opening app
+- HC-06 paired in Android Bluetooth settings before opening app
 
 ---
 
@@ -69,9 +69,9 @@ Transfer the APK to your Android device and install it. You'll need to allow **I
 ## First Time Setup
 
 1. On your Android phone, go to **Settings → Bluetooth**
-2. Pair with **HC-05** (default PIN is usually `1234` or `0000`)
+2. Pair with **HC-06** (default PIN is usually `1234` or `0000`)
 3. Open the app
-4. Tap **CONNECT** → select HC-05 from the list
+4. Tap **CONNECT** → select HC-06 from the list
 5. Tap **MANUAL** to enable manual control
 
 ---
