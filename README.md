@@ -22,7 +22,7 @@ The system is split into two parts:
 ```
 Samsung Android Phone
         │
-        │  Bluetooth (HC-05, Classic BT)
+        │  Bluetooth (HC-06, Classic BT)
         ▼
    Arduino Uno
    ┌──────────────────────────────┐
@@ -76,8 +76,8 @@ Samsung Android Phone
 1. Upload [`arduino/robot_controller.ino`](./arduino/robot_controller.ino) to the Arduino Uno
 2. Build and install the Flutter app — see [`flutter_app/README.md`](./flutter_app/README.md)
 3. Power on the robot
-4. Pair your Android phone with **HC-05** via Bluetooth settings
-5. Open the app → tap **CONNECT** → select HC-05
+4. Pair your Android phone with **HC-06** via Bluetooth settings
+5. Open the app → tap **CONNECT** → select HC-06
 6. Tap **MANUAL** to start driving
 
 ---
