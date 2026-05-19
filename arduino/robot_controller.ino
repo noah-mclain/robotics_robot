@@ -57,7 +57,7 @@ int speedValue = 130;
 #define TRIG 11
 #define ECHO 12
 
-int stopDistance   = 15;
+int stopDistance   = 5;
 int warnDistance   = 30;
 
 enum UltraState { IDLE, LISTENING };
@@ -114,9 +114,16 @@ void moveServo(int ch, int angle) {
 void updateElbow() {
   if (millis() - lastServoUpdate > 20) {
     lastServoUpdate = millis();
-    if (elbowAngle < targetElbow) elbowAngle++;
-    else if (elbowAngle > targetElbow) elbowAngle--;
-    moveServo(ELBOW_CH, elbowAngle);
+    
+    if (elbowAngle < targetElbow) {
+      elbowAngle++;
+      moveServo(ELBOW_CH, elbowAngle);
+    }
+    else if (elbowAngle > targetElbow) {
+      elbowAngle--;
+      moveServo(ELBOW_CH, elbowAngle);
+    }
+    // if equal -> do nothing, don't resend signal
   }
 }
 
@@ -338,8 +345,14 @@ void loop() {
   updateSequence();   // runs pick/place/uturn state machine
 
   if (!autoMode && goingForward) {
-    smartForward();
-  }
+    if (currentDistance <= stopDistance) {
+        stopMotors();
+        goingForward = false;
+    } else if (currentDistance <= warnDistance) {
+        moveForwardSlow();
+    } else {
+        moveForward();
+    }
 
   if (isTurning && millis() - turnStartTime >= turnDuration) {
     stopMotors();
